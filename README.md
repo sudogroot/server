@@ -1,11 +1,6 @@
 # Joyread
 
-[![Discord Chat](https://img.shields.io/discord/469213750038364172.svg)](https://discord.gg/GvxsBMt) 
-
-Joyread is a lightweight self-hosted ebook reader written in Go. Licensed under AGPLv3. UNDER ACTIVE DEVELOPMENT.
-
-### Cross-platform
-Joyread runs anywhere Go can compile for: Windows, macOS, Linux, ARM, etc. Choose the one you love!
+Joyread is a self-hosted ebook reader written in Go.
 
 ### Easy installation
 You can simply run `sudo snap install joyread` (on Linux platforms) or ship Joyread with Docker.
@@ -24,6 +19,7 @@ Do you find it cumbersome to upload your massive collection of ebooks via HTTP f
 
 # Setup
 Joyread is under development. It is not ready for production use.
+
 ### Prerequisites
  - PostgreSQL 10
  - Create a new role and database in PostgreSQL. Example shown below
