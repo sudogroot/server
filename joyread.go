@@ -54,6 +54,8 @@ func StartServer() {
 	// HTML rendering
 	r.LoadHTMLGlob(path.Join(conf.BaseValues.AssetPath, "assets/templates/*"))
 
+	os.MkdirAll(path.Join(conf.BaseValues.AssetPath, "uploads/img"), os.ModePerm)
+
 	// Open postgres database
 	connStr := fmt.Sprintf("postgres://%s:%s@%s:%s/%s?sslmode=%s", conf.BaseValues.DBValues.DBUsername, conf.BaseValues.DBValues.DBPassword, conf.BaseValues.DBValues.DBHostname, conf.BaseValues.DBValues.DBPort, conf.BaseValues.DBValues.DBName, conf.BaseValues.DBValues.DBSSLMode)
 	db, err := sql.Open("postgres", connStr)
