@@ -54,6 +54,7 @@ func StartServer() {
 	// HTML rendering
 	r.LoadHTMLGlob(path.Join(conf.BaseValues.AssetPath, "assets/templates/*"))
 
+	// Create uploads/img directory
 	os.MkdirAll(path.Join(conf.BaseValues.AssetPath, "uploads/img"), os.ModePerm)
 
 	// Open postgres database
