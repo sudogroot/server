@@ -22,7 +22,7 @@ package models
 import (
 	"database/sql" // custom packages
 
-	cError "gitlab.com/joyread/server/error"
+	cError "gitlab.com/joyread/ultimate/error"
 )
 
 // CreateLegend ...

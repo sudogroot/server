@@ -24,7 +24,7 @@ import (
 	"fmt"
 
 	"github.com/gin-gonic/gin"
-	"gitlab.com/joyread/server/models"
+	"gitlab.com/joyread/ultimate/models"
 )
 
 // CORSMiddleware ...
