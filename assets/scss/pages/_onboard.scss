@@ -1,0 +1,71 @@
+.onboard {
+    @extend .mt\+\+;
+    @extend .margin-center;
+
+    width: 420px;
+    min-height: calc(100vh - 130px);
+
+    &__title {
+        @extend .fs\+;
+        @extend .fw\+;
+        
+        text-align: center;
+    }
+
+    &__description {
+        @extend .mt;
+
+        text-align: center;
+        line-height: 20px;
+    }
+
+    & input[type="text"], & input[type="email"], & input[type="password"] {
+        @extend .w1\/1;
+        @extend .mt\+;
+    }
+
+    & .button {
+        @extend .block;
+        @extend .mt\+;
+        @extend .margin-center;
+    }
+
+    &__radio {
+        @extend .flex;
+        @extend .flex__center;
+        @extend .mt\+;
+    }
+
+    &__sub {
+        @extend .mv\+\+\+\+;
+
+        &-title {
+            @extend .fs;
+            @extend .fw\+;
+        }
+
+        &-message {
+            @extend .w1\/1;
+            @extend .flex;
+            @extend .flex__baseline;
+
+            & p {
+                & i {
+                    @extend .block;
+
+                    width: 30px;
+                    height: 30px;
+                    background-image: url('/assets/img/gif/loading.gif');
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                    margin-bottom: -8px;
+                }
+            }
+        }
+
+        & .button {
+            @extend .ml0;
+            @extend .mr;
+        }
+    }
+}

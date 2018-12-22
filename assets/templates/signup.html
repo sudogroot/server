@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Joyread</title>
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
+    <header class="header">
+        <a href="" class="header__logo"><img src="/assets/img/vector/logo.svg" alt="Joyread"></a>
+    </header>
+    <main class="onboard">
+        <div class="onboard__title">Create an admin account</div>
+        <div class="onboard__description">Admin controls the overall management in this platform - which includes adding or revoking users, removing books of others which is not appropriate.</div>
+        <form method="post" action="/signup" class="onboard__form">
+            <input type="text" name="username" placeholder="Username" />
+            <p class="input-error"></p>
+            <p class="input-info">This username will be publicly visible to other users in the platform when they see an activity of yours.</p>
+            <input type="email" name="email" placeholder="Email address" />
+            <p class="input-error"></p>
+            <p class="input-info">This will be used only for communication regarding any notifications and will not be shown publicly.</p>
+            <input type="password" name="password" placeholder="Password" />
+            <p class="input-error"></p>
+            <p class="input-info">You know what this is ;) Choose it wisely!</p>
+            <input type="submit" class="button button--primary" value="Submit" />
+        </form>
+    </main>
+    <footer class="footer">
+        <div class="footer__left">Powered by Joyread. Licensed under AGPLv3.</div>
+        <div class="footer__right">
+            <a href="https://github.com/joyread/server">Source code</a>
+            <a href="https://joyread.org">Website</a>
+            <a href="https://twitter.com/joyreadapp">Twitter</a>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+</body>
+</html>

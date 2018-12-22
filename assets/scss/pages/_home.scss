@@ -1,0 +1,46 @@
+.main {
+    @extend .mt\+\+;
+
+    min-height: calc(100vh - 130px);
+
+    &__content {
+        @extend .flex;
+        @extend .flex__space-between;
+        @extend .mt\+;
+    }
+
+    & .books {
+        @extend .overflow-hidden;
+
+        & a {
+            @extend .pull-left;
+            @extend .mb\+\+;
+            
+            width: 170px;
+            margin-right: 36px;
+
+            &:nth-child(5n) {
+                @extend .mr0;
+            }
+
+            & img {
+                @extend .border-box;
+
+                width: 170px;
+                border: 2px solid transparent;
+
+                &:hover {
+                    border: 2px solid $brand-primary;
+                }
+            }
+        }
+    }
+
+    & .filter-box {
+        @extend .mb\+\+;
+
+        &:last-child {
+            @extend .mb0;
+        }
+    }
+}

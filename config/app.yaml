@@ -1,0 +1,13 @@
+# Joyread YAML config
+
+server:
+    port: 8080 # port that app runs
+    asset_path: . # templates, css, img, js etc
+    data_path: . # uploaded books and cover images
+    database:
+        hostname: localhost # localhost or external IP of your database server
+        port: 5432 # 5432
+        name: joyreaddb # joyreaddb
+        username: joyreaduser # joyreaduser
+        password: jellyfish
+        sslmode: disable

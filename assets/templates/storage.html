@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Joyread</title>
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
+    <header class="header">
+        <a href="" class="header__logo"><img src="/assets/img/vector/logo.svg" alt="Joyread"></a>
+    </header>
+    <main class="onboard">
+        <div class="onboard__title">Ebook storage configuration</div>
+        <div class="onboard__description">This option will reflect for all the users. For example: if you have chosen Nextcloud, you and other users can only sync books from Nextcloud and cannot be able to store books locally in the server. It is an either/or option and cannot be changed later.</div>
+        <form method="post" action="/storage" class="onboard__form">
+            <div class="onboard__radio">
+                <input type="radio" name="storage" value="local" id="local" checked />
+                <label for="local">Local</label>
+            </div>
+            <p class="radio-info">Store your ebooks locally where Joyread is installed.</p>
+            <div class="onboard__radio">
+                <input type="radio" name="storage" value="nextcloud" id="nextcloud" />
+                <label for="nextcloud">Nextcloud</label>
+            </div>
+            <p class="radio-info">Use Nextcloud as your ebook storage. You can upload your ebooks to Nextcloud and sync it in Joyread. Please enter the fields below for integrating with Nextcloud via OAuth2. If you are not sure on how to integrate, please check this <a href="https://joyread.org/faq.html">FAQ</a> section.</p>
+            <div class="onboard__nextcloud" id="nextcloudForm">
+                <input type="text" name="url" placeholder="Nextcloud URL*" />
+                <p class="input-error"></p>
+                <p class="input-info">This is your hosted Nextcloud instance URL.</p>
+                <input type="text" name="directory" placeholder="Nextcloud directory (/joyread)*" />
+                <p class="input-error"></p>
+                <p class="input-info">Directory path where Joyread will pull books from.</p>
+                <input type="text" name="client_id" placeholder="Client ID*" />
+                <p class="input-error"></p>
+                <p class="input-info">Client ID obtained in your Nextcloud.</p>
+                <input type="text" name="client_secret" placeholder="Client secret*" />
+                <p class="input-error"></p>
+                <p class="input-info">Client secret obtained in your Nextcloud.</p>
+                <input type="hidden" name="joyread_url" id="joyreadURL" />
+                <input type="submit" class="button button--primary" value="Submit" />
+            </div>
+        </form>
+    </main>
+    <footer class="footer">
+        <div class="footer__left">Powered by Joyread. Licensed under AGPLv3.</div>
+        <div class="footer__right">
+            <a href="https://github.com/joyread/server">Source code</a>
+            <a href="https://joyread.org">Website</a>
+            <a href="https://twitter.com/joyreadapp">Twitter</a>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="assets/js/onboard.js"></script>
+</body>
+</html>

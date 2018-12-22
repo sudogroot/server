@@ -1,0 +1,77 @@
+.currently-reading {
+    @extend .rel-pos;
+    @extend .mt\+\+;
+    @extend .p\+;
+
+    background: $brand-secondary;
+
+    &__header {
+        @extend .w1\/1;
+        
+        height: 40px;
+    }
+
+    &__title {
+        @extend .pull-left;
+        @extend .fs\+;
+        @extend .fw\+;
+        @extend .p;
+
+        background: white;
+    }
+
+    &__nav {
+        @extend .pull-right;
+    }
+
+    &__left, &__right {
+        @extend .pull-left;
+        @extend .p;
+        @extend .border-box;
+        @extend .cursor-pointer;
+
+        background: white;
+        height: 40px;
+
+        &:hover {
+            background: $brand-primary;
+
+            svg {
+                g {
+                    stroke: white;
+                }
+            }
+        }
+    }
+
+    &__left {
+        @extend .mr\+\+;
+    }
+
+    &__books {
+        @extend .mt\+\+;
+        @extend .overflow-hidden;
+
+        & a {
+            @extend .pull-left;
+            
+            width: 170px;
+            margin-right: 36px;
+
+            &:last-child {
+                @extend .mr0;
+            }
+
+            & img {
+                @extend .border-box;
+
+                width: 170px;
+                border: 2px solid transparent;
+
+                &:hover {
+                    border: 2px solid $brand-primary;
+                }
+            }
+        }
+    }
+}

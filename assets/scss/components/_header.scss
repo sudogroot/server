@@ -1,0 +1,129 @@
+.header {
+    @extend .rel-pos;
+    @extend .flex;
+    @extend .flex__center;
+    @extend .flex__space-between;
+
+    height: 60px;
+
+    &__left {
+        & input[type="text"] {
+            width: 420px;
+        }
+    }
+
+    &__logo {
+        @extend .abs-pos;
+        left: 50%;
+        margin-left: -15.5px;
+    }
+
+    &__right {
+        @extend .flex;
+    }
+
+    & #addNewBooks {
+        @extend .none;
+    }
+
+    &__nav {
+        @extend .flex;
+        @extend .fs;
+        @extend .fw\+;
+        @extend .text-color;
+        @extend .no-link;
+        @extend .mr\+\+;
+
+        align-items: initial;
+
+        &:hover {
+            @extend .text-hover;
+
+            & svg {
+                & path {
+                    fill: $brand-primary;
+                }
+            }
+
+            & .header__i-dropdown {
+                border-top: 8px solid $brand-primary;
+            }
+        }
+
+        &:last-child {
+            @extend .mr0;
+        }
+    }
+
+    &__i-svg {
+        @extend .mr\-;
+
+        height: 20px;
+    }
+
+    &__i-dropdown {
+        @extend .block;
+        @extend .ml\-\-;
+        
+        width: 0;
+        height: 0;
+        border-left: 6px solid transparent;
+        border-right: 6px solid transparent;
+        border-top: 8px solid $text-primary;
+        margin-top: 6px;
+    }
+
+    &__notifications {
+        @extend .abs-pos;
+        @extend .brand-background;
+        @extend .fs\-\-;
+        @extend .p\-\-;
+        @extend .border-box;
+
+        max-width: 23px;
+        top: 8px;
+        color: white;
+        text-align: center;
+        margin-left: -2px;
+    }
+
+    &__n-dropdown {
+        @extend .none;
+        @extend .abs-pos;
+        @extend .pv;
+        @extend .border;
+
+        width: 220px;
+        height: auto;
+        background: white;
+        top: 60px;
+        right: 210px;
+        z-index: 1;
+
+        &:before, &:after {
+            @extend .abs-pos;
+
+            content: "";
+            top: -11px;
+            right: 19px;
+            width: 0;
+            height: 0;
+            border-left: 8px solid transparent;
+            border-right: 8px solid transparent;
+            border-bottom: 10px solid rgba(0, 0, 0, 0.14);
+        }
+
+        &:after {
+            border-bottom: 10px solid white;
+            top: -10px;
+        }
+    }
+}
+
+.viewer {
+    & .header{
+        @extend .w1300;
+        @extend .margin-center;
+        @extend .ph\+\+;
+    }
+}

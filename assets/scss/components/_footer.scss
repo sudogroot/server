@@ -1,0 +1,29 @@
+.footer {
+    @extend .flex;
+    @extend .flex__space-between;
+    @extend .fs\-;
+    @extend .mb\+\+;
+
+    &__right {
+        & a {
+            @extend .text-color;
+            @extend .mr\+;
+
+            &:hover {
+                @extend .text-hover;
+            }
+
+            &:last-child {
+                @extend .mr0;
+            }
+        }
+    }
+}
+
+.viewer {
+    & .footer{
+        @extend .w1300;
+        @extend .margin-center;
+        @extend .ph\+\+;
+    }
+}

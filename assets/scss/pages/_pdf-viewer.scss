@@ -1,0 +1,15 @@
+.pdf-viewer {
+    @extend .mt\+\+;
+    @extend .margin-center;
+
+    width: 100%;
+    height: calc(100vh - 134px);
+
+    &__iframe {
+        height: calc(100vh - 180px);
+    }
+
+    & ~ footer {
+        @extend .border-box;
+    }
+}

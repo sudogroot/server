@@ -1,0 +1,102 @@
+input[type="text"], input[type="email"], input[type="password"] {
+    @extend .p;
+    @extend .border;
+    @extend .outline-none;
+    @extend .border-box;
+    @extend .fs;
+    @extend .text-color;
+
+    font-family: $font-primary;
+    height: 36px;
+
+    &:focus {
+        @extend .border-focus;
+    }
+}
+
+input[type="radio"] {
+    @extend .outline-none;
+}
+
+a {
+    color: #F56363;
+}
+
+.input-error {
+    @extend .block;
+    @extend .fs\-;
+    @extend .fw\+;
+    @extend .mt\-\-;
+    @extend .mb\-;
+}
+
+.input-info {
+    @extend .block;
+    @extend .fs\-;
+    @extend .mt\-\-;
+
+    line-height: 18px;
+}
+
+.radio-info {
+    @extend .block;
+    @extend .fs\-;
+    @extend .mt\-;
+
+    line-height: 18px;
+    margin-left: 25px;
+}
+
+#mainFilter {
+    @extend .fs;
+    @extend .text-color;
+    @extend .pv\-;
+}
+
+.filter-box {
+    @extend .brand-secondary-background;
+
+    width: 210px;
+    height: 200px;
+
+    &__title {
+        @extend .fw\+;
+        @extend .pb\-;
+
+        background: white;
+    }
+
+    &__list {
+        @extend .pb;
+
+        height: 170px;
+        overflow-y: auto;
+        
+        & li {
+            @extend .flex;
+            @extend .ph\-;
+            @extend .mt;
+        }
+    }
+}
+
+.button {
+    @extend .cursor-pointer;
+    @extend .fs;
+    @extend .fw\+;
+    @extend .ph\+;
+    @extend .pv;
+
+    font-family: $font-primary;
+    color: white;
+    border: none;
+    outline: none;
+    
+    &--primary {
+        @extend .brand-background;
+    }
+
+    &--secondary {
+        background: $text-primary;
+    }
+}
