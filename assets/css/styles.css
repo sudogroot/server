@@ -381,9 +381,6 @@ table {
 .brand-secondary-color {
   color: #F5EFEF; }
 
-.brand-background, ::-moz-selection, .button--primary, .header__notifications {
-  background-color: #F56363; }
-
 .brand-background, ::selection, .button--primary, .header__notifications {
   background-color: #F56363; }
 
@@ -517,9 +514,6 @@ table {
 .border-focus, input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focus {
   border: 1px solid #F56363; }
 
-::-moz-selection {
-  color: white; }
-
 ::selection {
   color: white; }
 
@@ -648,7 +642,7 @@ a {
 
 .onboard {
   width: 420px;
-  min-height: calc(100vh - 130px); }
+  min-height: calc(100vh - 134px); }
   .onboard__title {
     text-align: center; }
   .onboard__description {
