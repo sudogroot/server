@@ -2,8 +2,8 @@
 
 Joyread is a self-hosted ebook reader written in Go.
 
-### Easy installation
-You can simply run `sudo snap install joyread` (on Linux platforms) or ship Joyread with Docker.
+### Easy installation and updates
+You can simply run our installation script on a freshly installed Ubuntu instance which will setup Joyread and it automatically takes care of the updates.
 
 ### Share your ebooks
 Share ebooks with your family and friends: Being a multi-user product, Joyread can be used for sharing ebooks with all users on the platform or just with selected users. You can also keep your ebooks private.
