@@ -37,7 +37,7 @@ func UploadBooks(c *gin.Context) {
 			})
 			return
 		} else {
-			cmd := exec.Command("./xpdf-tools-win-4.00/bin64/pdfinfo.exe", fileStoragePath)
+			cmd := exec.Command("pdfinfo", fileStoragePath)
 
 			var out bytes.Buffer
 			cmd.Stdout = &out
@@ -60,13 +60,13 @@ func UploadBooks(c *gin.Context) {
 			coverPath := fmt.Sprintf("./uploads/img/%s", file.Filename)
 			fmt.Println(coverPath)
 
-			cmd = exec.Command("./xpdf-tools-win-4.00/bin64/pdftopng.exe", "-f", "1", "-l", "1", fileStoragePath, coverPath)
+			cmd = exec.Command("pdfimages", "-p", "-png", "-f", "1", "-l", "2", fileStoragePath, coverPath)
 
 			err = cmd.Run()
 			cError.CheckError(err)
 
-			if _, err := os.Stat(coverPath + "-000001.png"); err == nil {
-				coverPath = "/cover/" + file.Filename + "-000001.png"
+			if _, err := os.Stat(coverPath + "-001-000.png"); err == nil {
+				coverPath = "/cover/" + file.Filename + "-001-000.png"
 			} else {
 				cError.CheckError(err)
 			}
