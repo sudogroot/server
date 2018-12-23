@@ -6,7 +6,6 @@ import (
 	"fmt"
 	"os"
 	"path"
-	"reflect"
 	"runtime"
 	"strconv" // vendor packages
 
@@ -24,8 +23,6 @@ import (
 func StartServer() {
 	// Gin initiate
 	r := gin.Default()
-
-	fmt.Println(reflect.TypeOf(r))
 
 	conf := settings.GetConf()
 
