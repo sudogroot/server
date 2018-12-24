@@ -25,4 +25,3 @@ function watch() {
 }
 
 gulp.task('default', gulp.series(watch));
-gulp.task('style', gulp.series(styles));
