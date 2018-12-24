@@ -8,6 +8,7 @@
     "gulp-sass": "^4.0.1"
   },
   "scripts": {
-    "start": "gulp"
+    "start": "gulp",
+    "style": "gulp style"
   }
 }
