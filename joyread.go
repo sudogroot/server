@@ -10,13 +10,13 @@ import (
 	"strconv" // vendor packages
 
 	"github.com/gin-gonic/gin" // custom packages
-	"gitlab.com/joyread/ultimate/books"
-	cError "gitlab.com/joyread/ultimate/error"
-	"gitlab.com/joyread/ultimate/home"
-	"gitlab.com/joyread/ultimate/middleware"
-	"gitlab.com/joyread/ultimate/models"
-	"gitlab.com/joyread/ultimate/onboard"
-	"gitlab.com/joyread/ultimate/settings"
+	"gitlab.com/joyread/server/books"
+	cError "gitlab.com/joyread/server/error"
+	"gitlab.com/joyread/server/home"
+	"gitlab.com/joyread/server/middleware"
+	"gitlab.com/joyread/server/models"
+	"gitlab.com/joyread/server/onboard"
+	"gitlab.com/joyread/server/settings"
 )
 
 // StartServer handles the URL routes and starts the server

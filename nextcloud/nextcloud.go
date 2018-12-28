@@ -7,7 +7,7 @@ import (
 	"strings"
 	"time"
 
-	cError "gitlab.com/joyread/ultimate/error"
+	cError "gitlab.com/joyread/server/error"
 )
 
 // AuthURLRequest struct
