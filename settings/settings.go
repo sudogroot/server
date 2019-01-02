@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"io/ioutil"
 
-	cError "gitlab.com/joyread/server/error"
+	cError "gitlab.com/joyread/ultimate/error"
 	"gopkg.in/yaml.v2"
 )
 

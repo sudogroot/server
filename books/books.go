@@ -10,8 +10,8 @@ import (
 	"strings"
 
 	"github.com/gin-gonic/gin"
-	cError "gitlab.com/joyread/server/error"
-	"gitlab.com/joyread/server/models"
+	cError "gitlab.com/joyread/ultimate/error"
+	"gitlab.com/joyread/ultimate/models"
 )
 
 func hasPrefix(opSplit []string, content string) string {

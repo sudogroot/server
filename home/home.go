@@ -8,8 +8,8 @@ import (
 	"os"
 
 	"github.com/gin-gonic/gin"
-	cError "gitlab.com/joyread/server/error"
-	"gitlab.com/joyread/server/models"
+	cError "gitlab.com/joyread/ultimate/error"
+	"gitlab.com/joyread/ultimate/models"
 )
 
 type BookInfo struct {
