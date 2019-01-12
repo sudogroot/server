@@ -1,6 +1,6 @@
-# Joyread
+# Joyread (This project is under development)
 
-Joyread is a self-hosted ebook reader written in Go.
+Joyread is a self-hosted free(libre) ebook reader written in Go.
 
 ### Easy installation and updates
 You can simply run our installation script on a freshly installed Ubuntu instance which will setup Joyread and it automatically takes care of the updates.
