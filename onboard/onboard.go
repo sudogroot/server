@@ -9,9 +9,9 @@ import (
 
 	"github.com/dgrijalva/jwt-go"
 	"github.com/gin-gonic/gin"
-	cError "gitlab.com/joyread/ultimate/error"
-	"gitlab.com/joyread/ultimate/models"
-	"gitlab.com/joyread/ultimate/nextcloud"
+	cError "github.com/joyread/server/error"
+	"github.com/joyread/server/models"
+	"github.com/joyread/server/nextcloud"
 	"golang.org/x/crypto/bcrypt" // custom packages
 )
 

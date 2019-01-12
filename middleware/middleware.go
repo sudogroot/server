@@ -5,7 +5,7 @@ import (
 	"fmt"
 
 	"github.com/gin-gonic/gin"
-	"gitlab.com/joyread/ultimate/models"
+	"github.com/joyread/server/models"
 )
 
 // CORSMiddleware ...
