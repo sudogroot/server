@@ -1,7 +1,10 @@
 .currently-reading {
+    @extend .w1300;
     @extend .rel-pos;
     @extend .mt\+\+;
     @extend .p\+;
+    @extend .margin-center;
+    @extend .border-box;
 
     background: $brand-secondary;
 

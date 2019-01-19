@@ -1,5 +1,7 @@
 .main {
+    @extend .w1300;
     @extend .mt\+\+;
+    @extend .margin-center;
 
     min-height: calc(100vh - 130px);
 

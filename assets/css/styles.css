@@ -372,7 +372,7 @@ table {
   .fw\+, .input-error, .filter-box__title, .button, .header__nav, .currently-reading__title, .onboard__title, .onboard__sub-title {
     font-weight: 600; }
 
-.w1300, body, .viewer .header, .viewer .footer {
+.w1300, .header, .viewer .header, .footer, .viewer .footer, .currently-reading, .main {
   width: 1300px; }
 
 .brand-color {
@@ -417,7 +417,7 @@ table {
 .rel-pos, .header, .currently-reading {
   position: relative; }
 
-.border-box, body, input[type="text"], input[type="email"], input[type="password"], .header__notifications, .currently-reading__left, .currently-reading__right, .currently-reading__books a img, .main .books a img, .pdf-viewer ~ footer {
+.border-box, body, input[type="text"], input[type="email"], input[type="password"], .header__notifications, .currently-reading, .currently-reading__left, .currently-reading__right, .currently-reading__books a img, .main .books a img, .pdf-viewer ~ footer {
   -webkit-box-sizing: border-box;
   box-sizing: border-box; }
 
@@ -433,7 +433,7 @@ table {
 .inline-block {
   display: inline-block; }
 
-.margin-center, body, .viewer .header, .viewer .footer, .onboard, .onboard .button, .pdf-viewer {
+.margin-center, body, .header, .viewer .header, .footer, .viewer .footer, .currently-reading, .onboard, .onboard .button, .main, .pdf-viewer {
   margin-left: auto;
   margin-right: auto; }
 

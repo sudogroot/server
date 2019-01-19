@@ -1,8 +1,10 @@
 .header {
+    @extend .w1300;
     @extend .rel-pos;
     @extend .flex;
     @extend .flex__center;
     @extend .flex__space-between;
+    @extend .margin-center;
 
     height: 60px;
 

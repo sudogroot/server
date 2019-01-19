@@ -1,8 +1,10 @@
 .footer {
+    @extend .w1300;
     @extend .flex;
     @extend .flex__space-between;
     @extend .fs\-;
     @extend .mb\+\+;
+    @extend .margin-center;
 
     &__right {
         & a {
